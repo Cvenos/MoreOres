@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "more_ores:blocks/obsidianore",
+    "up": "more_ores:blocks/obsidianore",
+    "north": "more_ores:blocks/obsidianore",
+    "east": "more_ores:blocks/obsidianore",
+    "south": "more_ores:blocks/obsidianore",
+    "west": "more_ores:blocks/obsidianore",
+    "particle": "more_ores:blocks/obsidianore"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "mod/mcreator/mcreator_godBlock": {
+    "name": "mod/mcreator/mcreator_godBlock",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "more_ores:godblock"
+        }
+      }
+    ]
+  },
+  "mod/mcreator/mcreator_godBlock$BlockCustom": {
+    "name": "mod/mcreator/mcreator_godBlock$BlockCustom",
+    "interfaces": [
+      "net/minecraft/block/ITileEntityProvider"
+    ]
+  },
+  "mod/mcreator/mcreator_obsidianIngot": {
+    "name": "mod/mcreator/mcreator_obsidianIngot",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "more_ores:obsidianingot"
+        }
+      }
+    ]
+  },
+  "mod/mcreator/mcreator_obsidianOre": {
+    "name": "mod/mcreator/mcreator_obsidianOre",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "more_ores:obsidianore"
+        }
+      }
+    ]
+  },
+  "mod/mcreator/mcreator_obsidianOre$1": {
+    "name": "mod/mcreator/mcreator_obsidianOre$1",
+    "interfaces": [
+      "com/google/common/base/Predicate"
+    ]
+  },
+  "mod/mcreator/mcreator_obsidianPickaxe": {
+    "name": "mod/mcreator/mcreator_obsidianPickaxe",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "more_ores:obsidianpickaxe"
+        }
+      }
+    ]
+  },
+  "mod/mcreator/mcreator_obsidianShard": {
+    "name": "mod/mcreator/mcreator_obsidianShard",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/registry/GameRegistry$ObjectHolder;",
+        "target": "block",
+        "value": {
+          "value": "more_ores:obsidianshard"
+        }
+      }
+    ]
+  },
+  "mod/mcreator/more_ores": {
+    "name": "mod/mcreator/more_ores",
+    "interfaces": [
+      "net/minecraftforge/fml/common/IFuelHandler",
+      "net/minecraftforge/fml/common/IWorldGenerator"
+    ],
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "mod/mcreator/more_ores",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "dependencies": {
+            "value": "required-after:forge@[14.23.5.2768]"
+          },
+          "modid": {
+            "value": "more_ores"
+          },
+          "version": {
+            "value": "0.0.1"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "mod.mcreator.ClientProxymore_ores"
+          },
+          "serverSide": {
+            "value": "mod.mcreator.CommonProxymore_ores"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance",
+        "value": {
+          "value": "more_ores"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBlocks(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerBiomes(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerEntities(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerSounds(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerModels(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V"
+      }
+    ]
+  },
+  "mod/mcreator/more_ores$GuiHandler": {
+    "name": "mod/mcreator/more_ores$GuiHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/IGuiHandler"
+    ]
+  }
+}

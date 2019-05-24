@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "more_ores:blocks/godblock",
+    "up": "more_ores:blocks/godblock",
+    "north": "more_ores:blocks/godblock",
+    "east": "more_ores:blocks/godblock",
+    "south": "more_ores:blocks/godblock",
+    "west": "more_ores:blocks/godblock",
+    "particle": "more_ores:blocks/godblock"
+  }
+}

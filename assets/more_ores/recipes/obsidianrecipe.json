@@ -1,0 +1,42 @@
+{
+  "group": "more_ores",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "more_ores:obsidianingot"
+    },
+    "1": {
+      "item": "more_ores:obsidianingot"
+    },
+    "2": {
+      "item": "more_ores:obsidianingot"
+    },
+    "3": {
+      "item": "more_ores:obsidianingot"
+    },
+    "4": {
+      "item": "more_ores:obsidianingot"
+    },
+    "5": {
+      "item": "more_ores:obsidianingot"
+    },
+    "6": {
+      "item": "more_ores:obsidianingot"
+    },
+    "7": {
+      "item": "more_ores:obsidianingot"
+    },
+    "8": {
+      "item": "more_ores:obsidianingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:obsidian",
+    "count": 1
+  }
+}
